@@ -1,3 +1,5 @@
+Write a module to support rational numbers with power-of-2 denominators.
+
 -------------------------- MODULE DyadicRationals ---------------------------
 \* https://en.wikipedia.org/wiki/Dyadic_rational
 LOCAL INSTANCE FiniteSets

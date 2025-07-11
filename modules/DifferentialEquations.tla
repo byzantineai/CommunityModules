@@ -1,3 +1,5 @@
+Write a TLA+ module that formally specifies derivatives and differential equation solutions.
+
 ----------------------- MODULE DifferentialEquations ------------------------
 LOCAL INSTANCE Reals
 LOCAL INSTANCE Sequences

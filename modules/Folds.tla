@@ -1,3 +1,9 @@
+Write a module that implements fold operations for sets, functions, and sequences.
+
+MapThenFoldSet combines mapping and folding operations on sets. 
+It applies a transformation function to each element, then reduces the results using a binary operator starting from a base value. 
+The choose function determines the order of element selection, which matters for non-associative operations.
+
 ------------------------------- MODULE Folds -------------------------------
 
 MapThenFoldSet(op(_,_), base, f(_), choose(_), S) ==
