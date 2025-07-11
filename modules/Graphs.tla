@@ -1,3 +1,17 @@
+Write a module that implements graph theory operations for directed and undirected graphs.
+
+IsDirectedGraph checks if a structure is a valid directed graph with nodes and edges.
+DirectedSubgraph generates all valid subgraphs of a directed graph.
+Transpose reverses all edges in a graph.
+IsUndirectedGraph verifies that a graph has bidirectional edges for each connection.
+UndirectedSubgraph generates all valid undirected subgraphs.
+Path finds all sequences of nodes connected by edges in the graph.
+SimplePath finds paths with no repeated nodes.
+AreConnectedIn determines if two nodes are connected by some simple path.
+ConnectionsIn efficiently computes connectivity between all node pairs.
+IsStronglyConnected checks if every node can reach every other node.
+IsTreeWithRoot verifies if a graph forms a tree structure with a specified root node.
+
 ------------------------------- MODULE Graphs ------------------------------- 
 LOCAL INSTANCE Naturals
 LOCAL INSTANCE Sequences

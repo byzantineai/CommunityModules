@@ -1,3 +1,8 @@
+Extend Bags (multisets) module to support seven new operators. BagAdd adds elements. 
+BagRemove removes one copy. BagRemoveAll removes all copies. 
+MapThenFoldBag maps a function over elements then folds them. FoldBag folds elements directly. 
+SumBag sums all elements. ProductBag multiplies all elements.
+
 ------------------------------ MODULE BagsExt ------------------------------
 (***************************************************************************)
 (* Additional operators on bags (multisets).                               *)

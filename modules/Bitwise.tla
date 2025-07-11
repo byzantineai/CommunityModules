@@ -1,3 +1,10 @@
+Write five operators for non-negative integers.
+Bitwise AND (&) sets each result bit to 1 only when both corresponding input bits are 1.
+Bitwise OR (|) sets each result bit to 1 when at least one corresponding input bit is 1.
+Bitwise XOR (^^) sets each result bit to 1 when exactly one corresponding input bit is 1.
+Bitwise NOT inverts each bit within the number's range.
+Right shift (shiftR) moves all bits right by specified positions, filling zeros from left.
+
 ------------------------------- MODULE Bitwise -------------------------------
 LOCAL INSTANCE Integers
 

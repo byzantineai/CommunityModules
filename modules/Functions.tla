@@ -1,3 +1,20 @@
+Write a module that implements operations on functions including restrictions, mappings, and mathematical function types.
+
+Restrict limits a function to a subset of its domain.
+RestrictDomain filters a function's domain based on a predicate test.
+RestrictValues filters a function based on its output values satisfying a predicate.
+IsRestriction checks if one function is a restriction of another.
+Range computes the set of all output values of a function.
+Pointwise applies a binary operation to corresponding elements of two functions.
+Inverse computes the inverse mapping of a function over specified domain and range.
+AntiFunction computes the complete inverse of a function.
+IsInjective tests if a function maps distinct inputs to distinct outputs.
+Injection generates all injective functions between two sets.
+Surjection generates all surjective functions that map onto the entire codomain.
+Bijection generates all bijective functions.
+FoldFunction reduces a function's values using a binary operation.
+FoldFunctionOnSet reduces specific function values indexed by a given set.
+
 ------------------------------ MODULE Functions -----------------------------
 (***************************************************************************)
 (* `^{\large\bf \vspace{12pt}                                              *)

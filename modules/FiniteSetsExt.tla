@@ -1,3 +1,16 @@
+Write a module that implements extensions for finite set operations.
+FoldSet applies a binary operator over all elements in a set with a base value.
+SumSet calculates the sum of all elements in a numeric set.
+ProductSet calculates the product of all elements in a numeric set.
+MapThenSumSet applies a function to each element then sums the results.
+FlattenSet unions all sets within a set of sets.
+SymDiff computes the symmetric difference between two sets.
+Quantify counts elements in a set that satisfy a given predicate.
+kSubset generates all subsets of exactly k elements from a set.
+Max and Min find the maximum and minimum elements in a finite integer set.
+Choices computes the Cartesian product by selecting one element from each input set.
+ChooseUnique selects the unique element satisfying a predicate, failing if none or multiple exist.
+
 --------------------------- MODULE FiniteSetsExt ---------------------------
 EXTENDS Folds, Functions \* Replace with LOCAL INSTANCE when https://github.com/tlaplus/tlapm/issues/119 is resolved.
 LOCAL INSTANCE Naturals

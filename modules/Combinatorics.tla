@@ -1,3 +1,7 @@
+Write a module to support two operators for natural numbers.
+Factorial computes the product of all positive integers up to n, with 0! defined as 1.
+Choose computes (n choose k), representing combinations of k items from n items.
+
 ------------------------- MODULE Combinatorics -------------------------
 EXTENDS Naturals
 
