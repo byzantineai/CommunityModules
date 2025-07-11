@@ -1,3 +1,24 @@
+Write a module that implements HTML generation utilities for creating web documents programmatically.
+
+HTMLFill performs template substitution by replacing placeholders with values from a sequence of tuples.
+HTMLDocument creates a complete HTML document with header, body, and scripts.
+HTMLClass generates CSS class definitions with a list of attributes.
+HTMLAttribute creates CSS attribute declarations with name-value pairs.
+HTMLStyleSheet builds a complete style sheet with default styles and custom classes.
+HTMLScriptFile includes external JavaScript files by reference.
+HTMLScript embeds inline JavaScript code within script tags.
+HTMLHeader constructs the document head with title, links, and styles.
+HTMLBody wraps content in body tags.
+HTMLFrame creates div containers with specified IDs.
+HTMLGridContainer generates grid layout containers with custom classes.
+HTMLBox creates styled div elements with borders and custom sizing.
+HTMLCircle extends HTMLBox to create circular elements.
+HTMLText wraps text content in span elements with IDs.
+HTMLSVG embeds SVG graphics with viewBox and size specifications.
+HTMLSize generates width and height style attributes.
+HTMLJSLine creates LeaderLine connections between elements.
+HTMLJSKeyListener implements keyboard event handling for navigation.
+
 -------------------------------- MODULE HTML --------------------------------
 
 LOCAL INSTANCE Sequences
