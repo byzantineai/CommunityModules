@@ -16,7 +16,7 @@ ASSUME ~IsCausalOrder(<< <<0,1>>, <<0,0>> >>, LAMBDA l: l)
 ASSUME ~IsCausalOrder(<< <<1>>, <<0,0>> >>, LAMBDA l: l) \* concurrent
 
 Log ==
-    ndJsonDeserialize("tests/VectorClocksTests.ndjson")
+    ndJsonDeserialize("VectorClocksTests.ndjson")
 
 VectorClock(l) ==
     l.pkt.vc
