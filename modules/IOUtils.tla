@@ -1,3 +1,13 @@
+Write a module to support input/output operations and process execution.
+IOSerialize writes TLA+ values to files with optional compression.
+IODeserialize reads values back from files.
+Serialize/Deserialize handle multiple formats and destinations using options records.
+IOExec spawns subprocesses and returns exit code, stdout, and stderr.
+IOEnvExec runs commands with custom environment variables.
+IOExecTemplate substitutes parameters into command templates using printf-style formatting.
+IOEnv provides access to process environment variables.
+atoi converts string to integer for parsing environment values.
+
 ------------------------------ MODULE IOUtils ------------------------------
 
 LOCAL INSTANCE TLC

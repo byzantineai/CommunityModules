@@ -1,3 +1,11 @@
+Write a module to support distributed system visualization with vector clocks.
+Host identifies which process changed state by comparing program counters between consecutive states.
+FnHost builds array of host changes across entire trace for efficiency.
+Clock implements vector clock algorithm incrementing only the acting process's counter.
+FnClock accumulates vector clocks throughout execution trace.
+ToJsonObject formats vector clocks as JSON for ShiViz visualization tool compatibility.
+Module tracks causality in distributed systems by maintaining vector timestamps for each process.
+
 ------------------------------- MODULE ShiViz -------------------------------
 LOCAL INSTANCE Integers
 LOCAL INSTANCE Json

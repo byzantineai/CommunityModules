@@ -1,3 +1,12 @@
+Write a module to support JSON serialization and conversion operations.
+ToJson converts TLA+ values to JSON strings, mapping records to objects and tuples to arrays.
+ToJsonArray explicitly converts tuples to JSON array format.
+ToJsonObject explicitly converts records to JSON object format.
+JsonSerialize writes values to files as plain JSON.
+JsonDeserialize reads JSON files back to TLA+ values.
+ndJsonSerialize writes values as newline-delimited JSON.
+ndJsonDeserialize reads newline-delimited JSON files.
+
 -------------------------------- MODULE Json --------------------------------
 
 LOCAL INSTANCE Sequences

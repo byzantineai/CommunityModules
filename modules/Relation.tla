@@ -1,3 +1,18 @@
+Write a module to support operations on binary relations over sets.
+IsReflexive checks if every element relates to itself.
+IsIrreflexive checks if no element relates to itself.
+IsSymmetric checks if R[x,y] implies R[y,x].
+IsAntiSymmetric checks if R[x,y] and R[y,x] implies x=y.
+IsAsymmetric checks if R[x,y] and R[y,x] never both hold.
+IsTransitive checks if R[x,y] and R[y,z] implies R[x,z].
+IsStrictlyPartiallyOrdered verifies irreflexive, antisymmetric, and transitive properties.
+IsPartiallyOrdered verifies reflexive, antisymmetric, and transitive properties.
+IsStrictlyTotallyOrdered adds trichotomy to strict partial order.
+IsTotallyOrdered ensures all pairs are comparable.
+TransitiveClosure computes smallest transitive relation containing R.
+ReflexiveTransitiveClosure adds reflexivity to transitive closure.
+IsConnected checks if path exists between any two elements.
+
 ----------------------------- MODULE Relation ------------------------------
 LOCAL INSTANCE Naturals
 LOCAL INSTANCE FiniteSets \* TODO Consider moving to a more specific module.

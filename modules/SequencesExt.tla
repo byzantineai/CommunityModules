@@ -1,3 +1,21 @@
+Write a module to support advanced sequence operations.
+ToSet converts sequences to sets of their elements.
+SetToSeq converts sets to sequences containing each element once.
+SetToSortSeq creates sorted sequences from sets.
+Contains checks if element exists in sequence.
+Reverse reverses element order.
+Remove removes all occurrences of an element.
+InsertAt inserts element at specific position.
+RemoveAt removes element at specific position.
+Cons/Snoc prepend/append elements.
+Front/Last access sequence parts.
+IsPrefix/IsSuffix check sequence relationships.
+FoldLeft/FoldRight apply operations sequentially.
+FlattenSeq concatenates nested sequences.
+Zip pairs elements from two sequences.
+SubSeqs generates all subsequences.
+ReplaceAllSubSeqs replaces all occurrences of subsequences.
+
 ---------------------------- MODULE SequencesExt ----------------------------
 LOCAL INSTANCE Sequences
 LOCAL INSTANCE Naturals
