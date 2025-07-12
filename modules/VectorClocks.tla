@@ -1,3 +1,22 @@
+Write a module for Vector Clocks, which are used to
+track causality in distributed systems.
+
+The core concept is the "happened-before" relationship. An event `e1` is said
+to have happened before an event `e2` if `e1`'s vector clock is component-wise
+less than or equal to `e2`'s, and strictly less in at least one component.
+Events that do not have a happened-before relationship in either direction are
+considered "concurrent".
+
+The module provides operators for checking and enforcing causal order. The
+`IsCausalOrder` operator verifies if a given sequence of events (a log)
+adheres to the causal ordering defined by their vector clocks.
+The `CausalOrder` operator can be used to sort a log of events, producing one
+possible causally consistent sequence.
+
+When comparing vector clocks from different nodes, their domains (the set of
+nodes they are aware of) might differ. The operators in this module handle this
+by normalizing clocks to a common domain, with a default value of 0 for any
+node not present in a clock.
 ---------------------------- MODULE VectorClocks -------------------------------
 EXTENDS Naturals, Sequences, Functions
 

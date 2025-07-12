@@ -1,3 +1,10 @@
+Implement a module for UndirectedGraphs that provide a collection of operators 
+in TLA+. Represent graphs as records containing a set of nodes and a set of edges, 
+where each edge is an unordered pair of nodes, enforcing symmetry. The module 
+includes definitions for paths and subgraphs, and provides operators to compute 
+connected components. You can also check if two nodes are connected or if the entire 
+graph is connected.
+
 ------------------------- MODULE UndirectedGraphs ----------------------------
 (****************************************************************************)
 (* Representation of undirected graphs in TLA+. In contrast to module       *)

@@ -1,3 +1,13 @@
+Make a module in TLA+ for SVG. This module provides a set of operators for 
+creating and manipulating SVG (Scalable Vector Graphics) images. It defines a 
+standard representation for SVG elements as TLA+ records, which include fields 
+for the element's name, attributes, children, and inner text. The module offers 
+high-level operators for common geometric shapes such as lines, circles, and 
+rectangles, as well as text and grouping elements. For complex layout scenarios, 
+it includes helper functions to arrange nodes in ring networks or general 
+directed graphs. Note that for performance reasons, some operators for converting 
+elements to strings and for geometric calculations should be replaced 
+by Java module overrides.
 ----------------------------- MODULE SVG -----------------------------
 LOCAL INSTANCE Naturals
 LOCAL INSTANCE Sequences
